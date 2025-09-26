@@ -1,5 +1,6 @@
 using Microsoft.Data.Sqlite;
 
+public record Asiakas(int Id, string Nimi);
 class Kauppakanta
 {
     //Tietokantayhteyttä _connectionstring
@@ -50,7 +51,7 @@ class Kauppakanta
                 }
                 return asiakkaat;
             }
-                
+
         }
     }
 }
